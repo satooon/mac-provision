@@ -1,0 +1,74 @@
+- hosts: localhost
+  connection: local
+  gather_facts: no
+  sudo: no
+  roles:
+    - homebrew
+    - homebrew-cask
+    # - other
+  vars:
+    # Tap external Homebrew repositories.
+    #
+    # e.g.
+    # - homebrew/binary
+    homebrew_repositories:
+#      - homebrew/binary
+#      - homebrew/dupes
+      - caskroom/versions
+      - caskroom/cask
+
+    # Managed Homebrew packages.
+    #
+    # e.g.
+    # - package_name
+    # or
+    # { name: package_name, state: package_state, install_options: [with-baz, enable-debug] }
+    #
+    # state choices: [head, latest, present, absent, linked, unlinked] (default latest)
+    # install_options: string or sequence (default none)
+    homebrew_packages:
+      - readline
+      - openssl
+      - { name: openssl, state: linked, install_options: force }
+      - bash-completion
+#      - rbenv
+#      - ruby-build
+#      - go
+#      - peco
+#      - python
+      - tree
+      - sl
+      - cmatrix
+      - cowsay
+      - coreutils
+      - jq
+
+    # Tap external Homebrew Cask repositories.
+    homebrew_cask_repositories:
+#      - sanemat/font
+      - fumiyas/echo-sd
+
+    # Managed Homebrew Cask packages.
+    #
+    # e.g.
+    # - package_name
+    # or
+    # { name: package_name, state: package_state }
+    #
+    # state choices: [present, absent, installed, uninstalled] (default present)
+    homebrew_cask_packages:
+     - java
+     - vagrant
+     - virtualbox
+     - sequel-pro
+     - sourcetree
+     - sublime-text
+#      - slack
+     - firefox
+#     - google-chrome
+#      - google-japanese-ime
+     - dropbox
+     - macdown
+#     - libreoffice
+     - rdm
+     - filezilla

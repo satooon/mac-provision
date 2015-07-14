@@ -1,0 +1,6 @@
+---
+- name: easy_install pip
+  command: easy_install pip
+
+- name: install mitmproxy
+  command: pip install mitmproxy
