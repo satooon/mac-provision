@@ -43,6 +43,7 @@
       - coreutils
       - jq
       - jid
+      - mitmproxy
 
     # Tap external Homebrew Cask repositories.
     homebrew_cask_repositories:
