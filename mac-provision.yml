@@ -45,6 +45,7 @@
       - jid
       - mitmproxy
       - pyenv
+      - bat
 
     # Tap external Homebrew Cask repositories.
     homebrew_cask_repositories:
