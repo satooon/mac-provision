@@ -46,11 +46,13 @@
       - mitmproxy
       - pyenv
       - bat
+      - lazydocker
 
     # Tap external Homebrew Cask repositories.
     homebrew_cask_repositories:
 #      - sanemat/font
       - fumiyas/echo-sd
+      - jesseduffield/lazydocker
 
     # Managed Homebrew Cask packages.
     #
