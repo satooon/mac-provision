@@ -47,6 +47,7 @@
       - pyenv
       - bat
       - lazydocker
+      - jmeter
 
     # Tap external Homebrew Cask repositories.
     homebrew_cask_repositories:
