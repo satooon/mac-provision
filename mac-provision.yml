@@ -48,6 +48,7 @@
       - bat
       - lazydocker
       - jmeter
+      - k1LoW/tap/filt
 
     # Tap external Homebrew Cask repositories.
     homebrew_cask_repositories:
