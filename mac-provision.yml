@@ -50,6 +50,7 @@
       - jmeter
       - k1LoW/tap/filt
       - k1LoW/tap/colr
+      # see: https://qiita.com/minako-ph/items/dba6d65b741e3a30ad16
       - fish
 
     # Tap external Homebrew Cask repositories.
