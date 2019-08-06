@@ -50,6 +50,7 @@
       - jmeter
       - k1LoW/tap/filt
       - k1LoW/tap/colr
+      - fish
 
     # Tap external Homebrew Cask repositories.
     homebrew_cask_repositories:
