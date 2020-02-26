@@ -52,6 +52,9 @@
       - k1LoW/tap/colr
       # see: https://qiita.com/minako-ph/items/dba6d65b741e3a30ad16
       - fish
+      - exa
+      - fd
+      - bat
 
     # Tap external Homebrew Cask repositories.
     homebrew_cask_repositories:
